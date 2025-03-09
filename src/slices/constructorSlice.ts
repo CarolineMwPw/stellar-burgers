@@ -53,7 +53,3 @@ export const { addItem, deleteItem, clearConstructor, moveItem } =
 export const constructorSelector = constructorSlice.selectors;
 
 export const constructorReducer = constructorSlice.reducer;
-
-// updateAll: (state, action: PayloadAction<TConstructorIngredient[]>) => {
-//   state.ingredients = action.payload;
-// }

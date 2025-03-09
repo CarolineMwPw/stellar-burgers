@@ -59,3 +59,5 @@ export const {
 
   getIngredientById
 } = ingredientSlice.selectors;
+
+export default ingredientSlice;

@@ -30,13 +30,12 @@ export const ProtectedRoute = ({
   //   return <Navigate replace to={from} />;
   // }
 
-  // return children || <Outlet />;
-
   if ((!onlyUnAuth && !isAuthChecked) || (onlyUnAuth && isAuthChecked)) {
     const redirectTo = onlyUnAuth ? location.state?.from || '/' : '/login';
     return <Navigate replace to={redirectTo} state={{ from: location }} />;
   }
 
+  // return children || <Outlet />;
   return children;
 };
 

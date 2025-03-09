@@ -136,3 +136,5 @@ export const { isAuthCheckedSelector, getUser, getUserName, getError } =
   userSlice.selectors;
 
 export const userSliceReducer = userSlice.reducer;
+
+export default userSlice;
